@@ -1,0 +1,46 @@
+<!DOCTYPE YACodeBlocks SYSTEM "support/save_format.dtd">
+<YACodeBlocks ya-version="62" lang-version="17">
+<Pages><Page page-name=" " page-color="237 245 211" page-width="1280" page-height="1600" page-drawer="My Definitions" >
+<PageBlocks>
+<Block id="510" genus-name="close-application" >
+<Location><X>36</X><Y>274</Y></Location>
+<Label>close application</Label>
+<BeforeBlockId>521</BeforeBlockId>
+</Block>
+<Block id="507" genus-name="Screen-Initialize" >
+<Location><X>8</X><Y>175</Y></Location>
+<Label>Screen1.Initialize</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="519" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>asWeb.DataUri</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="519" genus-name="componentSetter" >
+<Location><X>36</X><Y>208</Y></Location>
+<Label>asWeb.DataUri</Label>
+<BeforeBlockId>507</BeforeBlockId>
+<AfterBlockId>521</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="523" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="521" genus-name="ActivityStarter-StartActivity" >
+<Location><X>36</X><Y>246</Y></Location>
+<Label>asWeb.StartActivity</Label>
+<BeforeBlockId>519</BeforeBlockId>
+<AfterBlockId>510</AfterBlockId>
+</Block>
+<Block id="523" genus-name="text" >
+<Location><X>182</X><Y>211</Y></Location>
+<Label>http:\/\/adf.ly\/CWVyq </Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="519" ></BlockConnector></Plug>
+</Block>
+</PageBlocks>
+</Page>
+
+</Pages><YoungAndroidMaps><YoungAndroidUuidMap>
+<YoungAndroidUuidEntry uuid="0" component-id="Screen1" component-genus="Form" component-version="0" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1354586264" component-id="asWeb" component-genus="ActivityStarter" component-version="3" ></YoungAndroidUuidEntry>
+</YoungAndroidUuidMap>
+</YoungAndroidMaps>
+</YACodeBlocks>
